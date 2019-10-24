@@ -22,6 +22,11 @@ public class GitbashArtApplication {
 		return new Question("LongAns", "1", "20", "What are the standard proc for Heroku?");
 	}
 	
+	@GetMapping("/address")
+	public String getAddress() {
+		return "Arvind, bangalore";
+	}
+	
 }
 
 class Question{
